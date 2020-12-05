@@ -25,9 +25,6 @@ namespace DataGenerator.Api
         {
             services.AddControllers();
 
-            //services.AddDbContext<DataContext>(options =>
-            //    options.UseInMemoryDatabase(databaseName: "LocalDb"));
-
             services.AddTransient<IDataGeneratorServices, DataGeneratorServices>();
             services.AddTransient<IGenerator, Generator>();
 

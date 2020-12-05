@@ -22,7 +22,7 @@ namespace DataGenerator.Api.Controllers
 
         #region Persons
         [HttpGet("persons")]
-        public async Task<IEnumerable<PersonModel>> GetAllPersonListAsync([FromQuery] uint quantity = 1)
+        public async Task<IEnumerable<PersonModel>> GetAllPersonListAsync([FromQuery] uint quantity = 3)
         {
             var response = await _dataGeneratorServices.GeneratePersonListAsync(quantity);
 
@@ -41,7 +41,7 @@ namespace DataGenerator.Api.Controllers
 
         #region Products
         [HttpGet("products")]
-        public async Task<IEnumerable<ProductModel>> GetAllProductListAsync([FromQuery] uint quantity = 1)
+        public async Task<IEnumerable<ProductModel>> GetAllProductListAsync([FromQuery] uint quantity = 3)
         {
             var response = await _dataGeneratorServices.GenerateProductListAsync(quantity);
 
