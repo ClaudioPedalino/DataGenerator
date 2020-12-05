@@ -1,7 +1,7 @@
 c
 PC:\Users\claud\source\repos\DataGenerator\DataGenerator.Core\Enums\Categories.csr	
-ô
-IC:\Users\claud\source\repos\DataGenerator\DataGenerator.Core\Generator.cs 8r+	 !"#$%&'()*+,-Ç !"#$%&'()*s
+ù
+IC:\Users\claud\source\repos\DataGenerator\DataGenerator.Core\Generator.cs 8r-	 !"#$%&'()*+,-./Ç!"#$%&'()*+,s
 aC:\Users\claud\source\repos\DataGenerator\DataGenerator.Core\Interfaces\IDataGeneratorServices.csr	
 g
 UC:\Users\claud\source\repos\DataGenerator\DataGenerator.Core\Interfaces\IGenerator.csr	
