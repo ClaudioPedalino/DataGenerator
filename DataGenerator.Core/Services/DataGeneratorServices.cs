@@ -16,20 +16,10 @@ namespace DataGenerator.Core.Services
             _generator = generator;
         }
 
-        /// <summary>
-        /// Generate a random list of people with sanitized information
-        /// </summary>
-        /// <param name="quantity">Amount of results [Default 3]</param>
-        /// <returns></returns>
-        public async Task<List<PersonModel>> GeneratePersonListAsync(uint quantity = 3)
+        public async Task<List<PersonModel>> GeneratePersonListAsync(uint quantity)
             => await _generator.GetAllPersonListAsync(quantity);
 
-        /// <summary>
-        /// Generate a random list of products with sanitized information
-        /// </summary>
-        /// <param name="quantity">Amount of results [Default 3]</param>
-        /// <returns></returns>
-        public async Task<List<ProductModel>> GenerateProductListAsync(uint quantity = 3)
+        public async Task<List<ProductModel>> GenerateProductListAsync(uint quantity)
             => await _generator.GetAllProductList(quantity);
     }
 }

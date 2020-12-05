@@ -2,5 +2,5 @@ projectKey=data-gen
 serverUrl=http://localhost:9000
 serverVersion=8.5.1.38104
 dashboardUrl=http://localhost:9000/dashboard?id=data-gen
-ceTaskId=AXYxcrmF6kxT7DRpo2m9
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AXYxcrmF6kxT7DRpo2m9
+ceTaskId=AXYxjsCJ6kxT7DRpo2m-
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXYxjsCJ6kxT7DRpo2m-

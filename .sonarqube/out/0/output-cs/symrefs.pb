@@ -76,17 +76,13 @@ aC:\Users\claud\source\repos\DataGenerator\DataGenerator.Core\Interfaces\IDataGe
 
  +
 
-
-
-  7
+  7
 
-
-
-= E
+= E
 
-! 9
+! 9
 
-? G“
+? G“
 UC:\Users\claud\source\repos\DataGenerator\DataGenerator.Core\Interfaces\IGenerator.cs
 
  
@@ -153,13 +149,13 @@ SC:\Users\claud\source\repos\DataGenerator\DataGenerator.Core\Models\ProductMode
 
 
  &(
-$ .  !! 
+$ .   
 
  $
 0 9 "
 
-- D
-J R6 >
+- D
+J R6 >
 
-  . F
-  L T!!2 :
+. F
+L T2 :

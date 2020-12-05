@@ -338,3 +338,33 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+
+# Ignore Sonar files
+*.sonarqube/
+/.sonarqube/out/.sonar/*.txt
+/.sonarqube/out/0/cbde/assemblies/DataGenerator.Core/42331983/*.mlir
+/.sonarqube/out/0/cbde/assemblies/DataGenerator.Core/42331983/*.xml
+/.sonarqube/out/0/output-cs/*.pb
+/.sonarqube/out/1/cbde/assemblies/DataGenerator.Api/3057052/*.mlir
+/.sonarqube/out/1/cbde/assemblies/DataGenerator.Api/3057052/*.xml
+report-task.txt
+.NETStandard,Version=v2.0.AssemblyAttributes_1.mlir
+Categories_1.mlir
+DataGenerator.Core.AssemblyInfo_1.mlir
+DataGeneratorServices_1.mlir
+Generator_1.mlir
+IDataGeneratorServices_1.mlir
+IGenerator_1.mlir
+PersonModel_1.mlir
+ProductModel_1.mlir
+cbdeSEout.xml
+metrics.pb
+symrefs.pb
+token-cpd.pb
+token-type.pb
+.NETCoreApp,Version=v3.1.AssemblyAttributes_1.mlir
+DataGenerator.Api.AssemblyInfo_1.mlir
+DataGenerator.Api.MvcApplicationPartsAssemblyInfo_1.mlir
+DataGeneratorController_1.mlir
+Program_1.mlir
+Startup_1.mlir
