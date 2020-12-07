@@ -7,7 +7,18 @@ namespace DataGenerator.Data.Interfaces
 {
     public interface IGenerator
     {
-        Task<List<PersonModel>> GetAllPersonListAsync(uint quantity);
-        Task<List<ProductModel>> GetAllProductList(uint quantity);
+        /// <summary>
+        /// Generate a random list of people with sanitized information
+        /// </summary>
+        /// <param name="quantity">Quantity of results wanted [Default 3]</param>
+        /// <returns></returns>
+        Task<List<PersonModel>> GeneratePersonListAsync(uint quantity = 3);
+
+        /// <summary>
+        /// Generate a random list of people with sanitized information
+        /// </summary>
+        /// <param name="quantity">Quantity of results wanted [Default 3]</param>
+        /// <returns></returns>
+        Task<List<ProductModel>> GenerateProductListAsync(uint quantity = 3);
     }
 }

@@ -8,11 +8,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DataGenerator.Data
+namespace DataGenerator.Data.Services
 {
     public class Generator : IGenerator
     {
-        public Task<List<PersonModel>> GetAllPersonListAsync(uint quantity)
+        public Task<List<PersonModel>> GeneratePersonListAsync(uint quantity)
             => Task.FromResult(
                     new Faker<PersonModel>()
                     .RuleFor(x => x.PersonId, f => Guid.NewGuid())
@@ -29,7 +29,7 @@ namespace DataGenerator.Data
                 .OrderBy(x => x.FirstName)
                 .ToList());
 
-        public Task<List<ProductModel>> GetAllProductList(uint quantity)
+        public Task<List<ProductModel>> GenerateProductListAsync(uint quantity)
             => Task.FromResult(
                 new Faker<ProductModel>()
                     .RuleFor(x => x.ProductId, f => Guid.NewGuid())

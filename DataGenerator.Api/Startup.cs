@@ -1,7 +1,5 @@
-using DataGenerator.Core.Interfaces;
-using DataGenerator.Core.Services;
-using DataGenerator.Data;
 using DataGenerator.Data.Interfaces;
+using DataGenerator.Data.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -25,7 +23,6 @@ namespace DataGenerator.Api
         {
             services.AddControllers();
 
-            services.AddTransient<IDataGeneratorServices, DataGeneratorServices>();
             services.AddTransient<IGenerator, Generator>();
 
             services.AddSwaggerGen(c =>

@@ -369,3 +369,4 @@ DataGeneratorController_1.mlir
 Program_1.mlir
 Startup_1.mlir
 /.sonarqube
+.vscode

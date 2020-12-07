@@ -1,9 +1,8 @@
-﻿using DataGenerator.Core.Interfaces;
-using DataGenerator.Core.Models;
+﻿using DataGenerator.Core.Models;
+using DataGenerator.Data.Interfaces;
 using DataGenerator.Data.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 
@@ -13,49 +12,28 @@ namespace DataGenerator.Api.Controllers
     [ApiController]
     public class DataGeneratorController : ControllerBase
     {
-        private readonly IDataGeneratorServices _dataGeneratorServices;
+        private readonly IGenerator _generator;
 
-        public DataGeneratorController(IDataGeneratorServices dataGeneratorServices)
+        public DataGeneratorController(IGenerator generator)
         {
-            _dataGeneratorServices = dataGeneratorServices;
+            _generator = generator ?? throw new System.ArgumentNullException(nameof(generator));
         }
 
-        #region Persons
         [HttpGet("persons")]
         public async Task<IEnumerable<PersonModel>> GetAllPersonListAsync([FromQuery] uint quantity = 3)
         {
-            var response = await _dataGeneratorServices.GeneratePersonListAsync(quantity);
+            var response = await _generator.GeneratePersonListAsync(quantity);
 
             return response;
         }
 
-        [HttpGet("person/id")]
-        public async Task<PersonModel> GetPersonByIdAsync([FromQuery] uint id)
-        {
-            var response = await _dataGeneratorServices.GeneratePersonListAsync(1);
-
-            return response.FirstOrDefault();
-        }
-        #endregion
-
-
-        #region Products
         [HttpGet("products")]
         public async Task<IEnumerable<ProductModel>> GetAllProductListAsync([FromQuery] uint quantity = 3)
         {
-            var response = await _dataGeneratorServices.GenerateProductListAsync(quantity);
+            var response = await _generator.GenerateProductListAsync(quantity);
 
             return response;
         }
-
-        [HttpGet("product/id")]
-        public async Task<ProductModel> GetProductByIdAsync([FromQuery] uint id)
-        {
-            var response = await _dataGeneratorServices.GenerateProductListAsync(1);
-
-            return response.FirstOrDefault();
-        }
-        #endregion
 
 
     }
